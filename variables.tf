@@ -16,13 +16,13 @@ variable "project_tag" {
 variable "vpc_cidr_block" {
   description = "CIDR block for VPC"
   type        = string
-  default     = "10.0.0.0/16"
+  default     = "10.0.0.0/27"
 }
 
 variable "public_subnet_count" {
   description = "Number of public subnets"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "private_subnet_count" {
